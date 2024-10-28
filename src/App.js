@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import { FaMoon, FaSun } from "react-icons/fa6";
+import { MdDelete, MdEdit } from "react-icons/md";
+
+
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -47,8 +51,8 @@ function App() {
     <div className={`min-h-screen flex flex-col items-center ${darkMode ? 'bg-gray-800 text-white' : 'bg-gray-100 text-black'}`}>
       {/* Dark Mode Toggle Button */}
       <div className="absolute top-4 right-4">
-        <button onClick={toggleDarkMode} className="text-gray-500 dark:text-gray-200">
-          {darkMode ? '☀️' : '🌙'}
+        <button onClick={toggleDarkMode} className="black dark:text-gray-200">
+          {darkMode ? <FaSun /> : <FaMoon />}
         </button>
       </div>
 
@@ -88,8 +92,8 @@ function App() {
                 </>
               )}
             </div>
-            <button onClick={() => handleEditTask(index)} className="text-blue-500 mx-2">✏️</button>
-            <button onClick={() => handleDeleteTask(index)} className="text-red-500">🗑️</button>
+            <button onClick={() => handleEditTask(index)} className="black"><MdEdit /></button>
+            <button onClick={() => handleDeleteTask(index)} className="black"><MdDelete /></button>
           </div>
         ))}
       </div>
