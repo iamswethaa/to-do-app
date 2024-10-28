@@ -13,12 +13,12 @@ This is a simple To-Do app built with React JS, Tailwind CSS, and Electron JS. I
 1. Clone the repository:
    ```bash
    
-   git clone https://github.com/your-username/todo-app.git
+   git clone https://github.com/iamswethaa/to-do-app.git
 
 2. Install dependencies:
    ```bash
    
-   cd todo-app
+   cd to-do-app
    npm install
 
 3. Run the development server:
