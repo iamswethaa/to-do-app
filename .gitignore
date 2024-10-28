@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Build outputs
+dist/
+build/
+
+# Temp files
+*.tmp
+*.temp
+.DS_Store
+
+# Electron cache
+*.asar
+
+# Other
+.env
