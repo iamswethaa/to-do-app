@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { FaMoon, FaSun } from "react-icons/fa6";
 import { MdDelete, MdEdit } from "react-icons/md";
-
-
+import { FaMoon, FaSun } from "react-icons/fa6";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
