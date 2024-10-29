@@ -49,7 +49,7 @@ function App() {
   };
 
   return (
-    <div className={`min-h-screen flex flex-col items-center ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-200 text-black'}`}>
+    <div className={`min-h-screen flex flex-col items-center ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'}`}>
       {/* Dark Mode Toggle Button */}
       <div className="absolute top-4 right-4">
         <button onClick={toggleDarkMode} className="text-black dark:text-white">
@@ -79,13 +79,13 @@ function App() {
                     type="text"
                     value={editTask.title}
                     onChange={(e) => setEditTask({ ...editTask, title: e.target.value })}
-                    className="text-black dark:text-gray-100 bg-gray-200 dark:bg-gray-800 p-1 mb-1 rounded"
+                    className="text-black dark:text-gray-100 bg-gray-100 dark:bg-gray-800 p-1 mb-1 rounded"
                   />
                   <input
                     type="text"
                     value={editTask.description}
                     onChange={(e) => setEditTask({ ...editTask, description: e.target.value })}
-                    className="text-black dark:text-gray-100 bg-gray-200 dark:bg-gray-800 p-1 rounded"
+                    className="text-black dark:text-gray-100 bg-gray-100 dark:bg-gray-800 p-1 rounded"
                   />
                   <button onClick={() => handleUpdateTask(index)} className="text-blue-500 dark:text-blue-400 mx-2">Save</button>
                 </>
@@ -111,14 +111,14 @@ function App() {
           placeholder="New Task Title"
           value={newTask.title}
           onChange={(e) => setNewTask({ ...newTask, title: e.target.value })}
-          className="w-full p-2 mb-2 rounded-lg bg-gray-200 dark:bg-gray-800 text-black dark:text-white"
+          className="w-full p-2 mb-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-black dark:text-white"
         />
         <input
           type="text"
           placeholder="New Task Description"
           value={newTask.description}
           onChange={(e) => setNewTask({ ...newTask, description: e.target.value })}
-          className="w-full p-2 mb-4 rounded-lg bg-gray-200 dark:bg-gray-800 text-black dark:text-white"
+          className="w-full p-2 mb-4 rounded-lg bg-gray-100 dark:bg-gray-800 text-black dark:text-white"
         />
         <button
           onClick={handleAddTask}
