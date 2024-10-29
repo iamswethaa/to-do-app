@@ -21,18 +21,17 @@ This is a simple To-Do app built with React JS, Tailwind CSS, and Electron JS. I
    cd to-do-app
    npm install
 
-3. Run the development server:
+3. Run the React development server:
    ```bash
    
    npm start
 
-4. Run Electron:
+4. In another terminal, run Electron:
    ```bash
    
-   npm run electron
+   npx electron .
 
 ## Scripts
 
 - **npm start:** Runs the React development server.
 - **npm run build:** Builds the React app for production.
-- **npm run electron:** Runs the app in Electron.
