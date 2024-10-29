@@ -4,9 +4,9 @@ This is a simple To-Do app built with React JS, Tailwind CSS, and Electron JS. I
 
 ## Features
 
-- Light/Dark Mode Toggle
 - Add, Edit, and Delete Tasks
 - Task Completion Marking
+- Light/Dark Mode Toggle
 
 ## Installation
 
